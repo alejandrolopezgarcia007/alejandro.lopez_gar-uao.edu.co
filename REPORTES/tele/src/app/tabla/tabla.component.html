@@ -1,0 +1,19 @@
+<p>Tablas de prueba</p>
+
+
+  <P>Generar reporte</P>
+
+  <input type="text" for="mi_reporte">
+  <button (click)="getReporte()">Mostrar</button>
+  <button (click)="addReporte()">Agregar</button>
+
+
+  <ul>
+  	<li *ngFor="let repo of nuevoReporte">{{repo}}</li>
+  </ul>
+
+  <P>Reportes </P>
+
+   <ul>
+    <li *ngFor="let reporteGeneral of reportes"></li>
+  </ul>
